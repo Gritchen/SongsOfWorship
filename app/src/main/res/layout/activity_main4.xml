@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main4Activity">
+
+
+
+    <ScrollView
+        android:layout_marginBottom="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="15sp"
+                android:textColor="#000"
+                android:gravity="left"
+                android:layout_margin="11dp"
+                android:textAppearance="?android:attr/textAppearanceMedium">
+
+            </TextView>
+
+
+            <View
+                android:id="@+id/view"
+                android:background="#000"
+                android:layout_below="@id/tv2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+            <TextView
+                android:id="@+id/tv4"
+                android:layout_below="@id/view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="\nApp Created: \n\nBy\n \nJoseph Gritchen\n\n"
+                android:textSize="15sp"
+                android:textColor="#611701"
+                android:fontFamily="cursive"
+                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceMedium">
+
+            </TextView>
+
+        </RelativeLayout>
+
+
+
+    </ScrollView>
+
+</RelativeLayout>

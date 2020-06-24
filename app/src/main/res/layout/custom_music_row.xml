@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="7dp"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivMusic"
+            android:layout_width="60dp"
+            android:layout_height="90dp"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/iconizes" />
+
+        <TextView
+            android:id="@+id/textName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ivStop"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@id/ivMusic"
+
+            android:layout_marginTop="41dp"
+            android:text="Song List"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="#2196F3"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/txtSinger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textName"
+            android:layout_below="@+id/textName"
+            android:text="Singer"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="#645506"
+            android:textStyle="italic"
+            android:textSize="16sp"
+            android:layout_alignLeft="@+id/textName" />
+
+        <ImageView
+            android:id="@+id/ivPlay"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_toLeftOf="@id/ivStop"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/ic_play"/>
+
+        <ImageView
+            android:id="@+id/ivStop"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/stop_outline"
+            android:layout_alignParentRight="true" />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

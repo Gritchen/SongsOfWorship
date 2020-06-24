@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#011A17"
+    tools:context=".Tip1Activity">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#009688"
+        android:textColor="#F30808"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="10sp"
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp"
+        android:text="If hymn is playing, and you want to play another hymn, please press stop first before playing another hymn."/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="60dp"
+        android:layout_below="@id/textView1"
+        android:divider="#5F0202"
+        android:dividerHeight="8dp">
+
+        <!--Divider code in ListView-->
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</RelativeLayout>
